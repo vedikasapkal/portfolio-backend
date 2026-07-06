@@ -1,0 +1,28 @@
+.about-container {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+.about-img {
+  flex: 1;
+  max-width: 350px;
+}
+.about-img img {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid var(--accent);
+  box-shadow: 10px 10px 0px var(--accent);
+}
+.about-text {
+  flex: 2;
+}
+.about-text p {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .about-container { flex-direction: column; text-align: center; }
+  .about-img { margin: 0 auto 30px; }
+}

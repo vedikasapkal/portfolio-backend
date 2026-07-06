@@ -1,0 +1,88 @@
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 80px 20px;
+}
+
+.contact-subtitle {
+  text-align: center;
+  color: var(--text-secondary, #b3b3b3);
+  max-width: 600px;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Forces all 3 cards to stay together in a aligned proper row/grid layout */
+.contact-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Individual card layout structure */
+.contact-item-card {
+  background-color: var(--bg-secondary, #1a1a1a);
+  border: 1px solid #2a2a2a;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Interactive hover alignment */
+.contact-item-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent, #00adb5);
+}
+
+.contact-item-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: var(--accent, #00adb5);
+}
+
+.contact-item-card h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary, #ffffff);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.contact-item-value {
+  color: var(--text-secondary, #b3b3b3);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.contact-item-link {
+  color: var(--accent, #00adb5);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-top: auto; /* Ensures all action buttons align cleanly at the bottom edge */
+  transition: opacity 0.2s;
+}
+
+.contact-item-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+/* Responsive adjustment for clean view on mobile viewports */
+@media (max-width: 768px) {
+  .contact-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
