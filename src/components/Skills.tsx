@@ -3,9 +3,9 @@ import '../styles/Skills.css';
 
 const Skills: React.FC = () => {
   const skillCategories = [
-    { title: 'Frontend', skills: ['React', 'TypeScript', 'JavaScript', 'HTML5/CSS3', 'Material UI'] },
-    { title: 'Backend', skills: ['ASP.NET Core', 'C#', 'Node.js', 'Express'] },
-    { title: 'Database & Tools', skills: ['SQL Server', 'MongoDB', 'Git', 'RESTful APIs'] }
+    { title: 'Frontend', skills: ['React','Angular', 'TypeScript', 'JavaScript', 'HTML5/CSS3', 'Material UI'] },
+    { title: 'Backend', skills: ['ASP.NET Core','ASP.NET MVC' ,'C#', 'Node.js', 'Express.js'] },
+    { title: 'Database & Tools', skills: ['SQL Server', 'MongoDB', 'Git', 'RESTful APIs','MYSQL','Node.js'] }
   ];
 
   return (

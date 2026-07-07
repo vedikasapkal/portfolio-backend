@@ -25,8 +25,8 @@ const Hero: React.FC = () => {
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">Explore Projects</a>
             <a 
-  href="/resume-backend.pdf" 
-  download="Vedika_Sapkal_Resume.pdf" 
+  href={`${import.meta.env.BASE_URL}resume-backend.pdf`} 
+  download="Sapkal_Vedika_Backend_Resume.pdf" 
   className="btn btn-secondary"
 >
   Download CV
@@ -37,7 +37,11 @@ const Hero: React.FC = () => {
         {/* Right Column: Visual Profile Display */}
         <div className="hero-right-image-container">
           <div className="profile-image-frame">
-            <img src="/Profile.jpeg" alt="Vedika Sapkal" className="hero-profile-pic" />
+            <img 
+  src={`${import.meta.env.BASE_URL}Profile.jpeg`} 
+  alt="Vedika Sapkal" 
+  className="hero-profile-pic" 
+/>
           </div>
         </div>
 

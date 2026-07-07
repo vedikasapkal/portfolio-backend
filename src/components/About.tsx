@@ -7,7 +7,11 @@ const About: React.FC = () => {
       <h2 className="section-title">About Me</h2>
       <div className="about-container">
         <div className="about-img">
-          <img src="/Profile.jpeg" alt="Vedika Sapkal Profile" />
+          <img 
+  src={`${import.meta.env.BASE_URL}Profile.jpeg`} 
+  alt="Vedika Sapkal Profile" 
+  className="about-profile-pic" 
+/>
         </div>
         <div className="about-text">
           <p>
