@@ -25,12 +25,12 @@ const Hero: React.FC = () => {
           <div className="hero-cta">
             <a href="#projects" className="btn btn-primary">Explore Projects</a>
             <a 
-              href="/Sapkal Vedika 2.5+ Exp CV (1).pdf" 
-              download="Sapkal_Vedika_Resume.pdf" 
-              className="btn btn-secondary"
-            >
-              Download CV
-            </a>
+  href="/resume-backend.pdf" 
+  download="Vedika_Sapkal_Resume.pdf" 
+  className="btn btn-secondary"
+>
+  Download CV
+</a>
           </div>
         </div>
 
